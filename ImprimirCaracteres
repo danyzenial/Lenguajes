@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+void mostrar(char *palabras[], int tam){
+	for(int i=0;i<tam;i++){
+		printf(palabras[i]);
+		printf("\n");
+	}
+}
+
+int main () {
+
+	char *palabras[]={"lenguajes","de","programacion","UNAH"};
+	int tam= sizeof(palabras)/ sizeof(char *);
+	mostrar(palabras,tam);
+	return 0;
+}
